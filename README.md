@@ -11,16 +11,16 @@ Repositori del codi inicial de la pràctica 1 del M06-UF3 i 4 (JS bàsic)
 ## **LS PokeMemory**
 Se'ns demana crear una aplicació similar a un joc del Memory utilizant imatges de pokemons.
 
-##* **Instruccions del joc Memory simple**
+## **Instruccions del joc Memory simple**
 L'usuari té X parelles de cartes girades cap per avall sobre el tauler (on X és un nombre natural qualsevol).
 Quan l'usuari clica a una carta, aquesta es gira i es mostra la imatge de la cara superior. Al clicar a una segona carta, si no té la mateixa imatge que l'anterior, es tornen a girar cap per avall les dues cartes, si té la mateixa imatge que l'anterior, es mantenen destapades i ja no es poden tocar més aquestes dues cartes.
 Quan l'usuari ha destapat totes les cartes (ha trobat totes les parelles guanya).
 
 ### **Interaccions de l'usuari del PokeMemory**
 1. Al principi l'usuari veurà només un formulari de registre amb id "registerForm". En aquest formulari se li demanarà les següents dades amb els següents inputs HTML:
-  - Username: amb un input HTML amb id "username".
-  - Email: amb un input HTML amb id "email".
-  - Age: amb un input HTML amb id "age".
+    - Username: amb un input HTML amb id "username".
+    - Email: amb un input HTML amb id "email".
+    - Age: amb un input HTML amb id "age".
 Quan l'usuari cliqui al botó submit del formulari, s'haurà de:
   1. Validar que els inputs HTML compleixin les següents condicions:
     - Username: ha de ser un string que només permeti lletres (majúscules i minúscules) i espais.
