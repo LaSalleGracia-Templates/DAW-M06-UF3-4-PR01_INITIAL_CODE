@@ -29,8 +29,8 @@ Quan l'usuari cliqui al botó submit del formulari, s'haurà de:
      - Email: ha de ser un string amb format de email (un text alfanumèric +  una "@" + un text alfanumèric + "." + un text alfanumèric).
      - Age: ha de ser un nombre enter major que 0 i menor que 100.
   2. Utilitzant l'API i la BBDD "Realtime DB" que ofereix l'aplicació de Firebase (fent servir el mètode "fetch", no la llibreria de Firebase) cal comprovar si el email existeix a la BBDD.
-    - Si existeix, s'ha de sobreescriure el username.
-    - Si no existeix, s'ha d'afegir un nou registre.
+     - Si existeix, s'ha de sobreescriure el username.
+     - Si no existeix, s'ha d'afegir un nou registre.
   3. L'id d'usuari que retorni l'API s'haurà de guardar al sessionStorage amb la clau "user".
 
 #### **Joc**
@@ -38,8 +38,9 @@ Sempre que hi hagi un id d'usuari amb la clau "user" al sessionStorage, no es mo
 La vista del joc consistirà en 3 parts:
   1. Al costat esquerra es mostrarà el següent:
       - Un formulari amb id "gameForm" per introduir quantes cartes l'usuari vol que tingui la partida.
-        - Per fer-ho tenir un input HTML amb id "numCards".
+        - Per fer-ho hi haurà un input HTML amb id "numCards".
         - Quan es cliqui al botó de submit del formulari, caldrà verificar si a l'input hi ha un nombre enter, positiu i parell.
+          - Si no compleix la verificació, caldrà mostrar un missatge d'error en un alert.
         - Si és correcte, començarà la partida:
           - S'iniciarà un contador amb id "timer", en el que es veuran els minuts i segons.
           - Es mostrarà el taulell del joc amb les cartes girades.
@@ -51,7 +52,7 @@ La vista del joc consistirà en 3 parts:
       - Aquest ranking tindrà 3 columnes: Mail, Temps i Número de cartes.
       - Cada cop que es guanyi una partida s'haurà de crear un nou registre a la BBDD de Firebase (utilitzant l'API propia, és a dir, fent servir el mètode fetch).
       - De cada registre caldrà guardar l'id del usuari, el temps que ha tardat en completar el joc i el nombre de cartes que ha escollit.
-      - El registre acabat d'afegir s'haurà de resaltar posant-lo de color vermell.
+      - El registre acabat d'afegir s'haurà de resaltar posant-lo amb el fons de color groc ('yellow').
       - Els registres es mostraran ordenats primer per cartes (de major a menor) i després per temps (de menor a major).
       - Si hi ha més de 5 registres de ranking, es mostraran només els 6 primers i uns punts suspensius, sempre que el regsitre acabat d'afegir no estigui entre els 5 primers, caldrà mostrar els punts supensius + el registre + uns altres punts suspensius.
   3. Un botó amb id "logout" per eliminar l'id guardada al sessionStorage i recarregar la pàgina.
