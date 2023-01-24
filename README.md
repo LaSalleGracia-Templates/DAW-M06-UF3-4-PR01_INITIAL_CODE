@@ -56,4 +56,14 @@ La vista del joc consistirà en 3 parts:
       - Els registres es mostraran ordenats primer per cartes (de major a menor) i després per temps (de menor a major).
       - Si hi ha més de 5 registres de ranking, es mostraran només els 6 primers i uns punts suspensius, sempre que el regsitre acabat d'afegir no estigui entre els 5 primers, caldrà mostrar els punts supensius + el registre + uns altres punts suspensius.
   3. Un botó amb id "logout" per eliminar l'id guardada al sessionStorage i recarregar la pàgina.
-
+# **Distribució de la puntuació**
+- Feature 1: *(2p)* Formulari de registre
+- Feature 2: *(3p)* Joc (costat esquerra)
+- Feature 3: *(2p)* Ranking (costat dret)
+- Feature 4: *(0,5p)* Logout
+- Files: *(1p)* *Distribueix correctament el codi en diferents fitxers i fes servir imports i exports.
+  - L'anterior puntuació només s'obtindrà si s'arriba a una nota de 4 a la pràctica amb les puntuacions de les features.
+- Code Quality: -0,25p Per cada error de HTMLHint i ESLint, màxim -2p.
+- Styles: *(0,5p)* **Estils en CSS propis.
+- Github: *(1p)* **Seguiment fent servir GitHub amb branques una per cada feature (amb merge al main quan estiguin acabades) i mínim un commit per classe (amb suficient feina feta).
+  - **Les dues anteriors puntuacions, només s'obtindran si s'aprova la pràctica amb la resta de les puntuacions.
